@@ -2,10 +2,10 @@
 
 ## ✅ Neophodni alati i paketi za pokretanje aplikacije
 
-### 1. Instalacija .NET SDK 8
+### 1. Instalacija .NET SDK 9
 
 - Neophodan za razvoj i pokretanje backenda
-- Preuzeti .NET SDK 8 sa [zvaničnog sajta](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- Preuzeti .NET SDK 9 sa [zvaničnog sajta](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - Instalaciju pratiti prema uputstvu za vaš operativni sistem
 
 ---
