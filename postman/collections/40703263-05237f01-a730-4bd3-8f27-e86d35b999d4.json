@@ -107,7 +107,7 @@
 					]
 				},
 				{
-					"name": "hello",
+					"name": "hi",
 					"id": "40703263-e473ea97-bd72-4719-a357-297bbbc55479",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
