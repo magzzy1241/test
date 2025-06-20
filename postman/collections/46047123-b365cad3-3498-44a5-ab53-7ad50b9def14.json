@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "46047123-b365cad3-3498-44a5-ab53-7ad50b9def14",
+		"name": "REST assured",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login page",
+			"item": [
+				{
+					"name": "sendLoginRequest",
+					"id": "46047123-19f8ea06-2418-43cf-bba1-56c249f75f79",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "46047123-aae7a2b4-8d56-4027-8ff9-ad66c255a7ae",
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"hello\",\r\n    \"password\": \"world\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}}/login",
+									"host": [
+										"{{baseUrl}}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\r\n    \"message\":\"hello\"\r\n}"
+						},
+						{
+							"id": "46047123-64965053-4d77-4400-a6ca-a069971e94b3",
+							"name": "failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"he\",\r\n    \"password\": \"world\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\r\n    \"message\":\"not authenticated\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "test",
+					"id": "46047123-8874ab75-7540-4826-aa23-25ddbe168345",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"id": "46047123-ca16eaad-ca47-4eb8-89a5-6672a79cec4b",
+							"name": "hi",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/hi",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"hi"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\r\n    \"hi\":\"hi\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "test2",
+					"id": "46047123-1ea0f078-9859-4019-8555-603a117c4742",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "46047123-7e7cfd52-3176-4343-978b-773ed3e297bb"
+		}
+	]
+}
